@@ -11,7 +11,6 @@ pipeline {
     stage('Build') {
       steps {
         build 'PES1UG21CS428-1'
-        echo "ls -l"
         sh 'g++ main.cpp -o output'
       }
     }
